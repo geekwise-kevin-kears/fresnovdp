@@ -10,18 +10,12 @@ body{
     height:1000px;
 }
 
-main{
+main, header,section{
     margin:0 auto;
     padding:0;
     width:90%;
 }
 
-header{
-    margin:0 auto;
-    padding:0;
-    width:80%;
-    
-}
 
 header{
     display:block;
@@ -109,11 +103,9 @@ nav{
 
 .nav_buttons{
     display: inline;
-    margin:0 auto;
-    padding:0;
     background: red;
     text-align:center;
-    width: 200px;
+    width: calc(100%/6);
     height:50px;
     line-height: 50px;
     color: white;
@@ -121,4 +113,36 @@ nav{
 }
 
 
+#sect_one{
+    width:100%;
+    height:500px;
+    background-color:lightcyan;
+}
 
+#hero_img_sect{
+    width:65%;
+    height:500px;
+    background-color:lime;
+    float:left;
+}
+
+#hero_img{
+    margin-top:50px;
+    
+}
+
+#comments{
+    width:35%;
+    height:500px;;
+    background-color:orange;
+    float:right;
+}
+
+.comment_box{
+    margin:40px auto;
+    padding:10px;
+    width:80%;
+    height:50px;
+    border-radius: 10px;
+    background-color:cornsilk
+}
