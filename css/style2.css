@@ -1,42 +1,178 @@
 html{
     background-color: black;
-    font-size:62.5%;
     text-align:center;
 }
 body{
-    background-color:lightcoral;
-    margin:0 auto;
-    padding:0;
-    width:80%;
-}
 
-main,header,footer{
     margin:0 auto;
     padding:0;
     width:100%;
+    height:1000px;
 }
 
-nav{
+main, header,section{
     margin:0 auto;
     padding:0;
+    width:90%;
+}
+
+
+header{
+    display:block;
+    height:150px;
+    background-color:snow;
+}
+
+footer{
     width:100%;
+    height:90px;
+    background-color:#00008B;
+}
+
+#head_position{
+    display:inline-block;
+    width:100%;
+    height:100%;
+}
+
+/* ***********Header Split into 3 sections************  */
+
+/* Veterans image*/
+#left_head{
+    width:15%;
+    height:150px;
+    background-color:#f3172d;
+    float:left;
+}
+/* Headline, Small Logo, Nav bar*/
+#mid_head{
+    margin:0 auto;
+    padding:0;
+    width:65%;
+    height:150px;
+    float:left;
+}
+
+#mid_top_head{
+    width:100%;
+    height:60%;
+    display:inline;
+}
+
+/* container for heading inside top_head    */
+#company_name{
+    width:70%;
     height:100px;
-    max-height:100px;
+    font-family: sans-serif;
+    color: #00008B;
+    float:left;
+    
+}
+
+#small_logo{
+    margin: 0px 100px 10px 10px;
+    width:100px;
+    height:100px;
+    float:right;
+   
+}
+
+
+
+/*Cotainer for Table Mtn Image*/
+#right_head{
+    width:15%;
+    height:150px;
+    background-color:#00008B;
+    float:right;
+}
+
+#push_down_one{
+    margin-top:25px;
+}
+
+
+#nav_bar{
+    display:inline-block;
+    margin:0 auto;
+    padding:0;
+    width:100%;
+    height:40px;
+    background-color:snow;
     box-sizing: border-box;
 }
 
-
-.nav_buttons{
-    display: inline;
-    margin:0 auto;
-    padding:0;
-    background: red;
-    text-align:center;
-    width: calc(100%/8);
-    max-height: 50px;
-    line-height: 50px;
-    float: left; 
-    color: white;
-    border: solid 2px white;
+a{
+    text-decoration: none;
+    font-size:12px;
+    font-weight:800;
 }
 
+button{
+    width:90;
+    height:35px;
+    border-radius:12px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+button:hover {
+    background-color: #00008B; /* Green */
+    color: white;
+}
+
+#sect_one{
+    width:100%;
+    height:500px;
+    box-sizing: border-box;
+}
+
+#hero_img_sect{
+    width:64%;
+    height:500px;
+    background-color:cornsilk;
+    float:left;
+    border:double 3px #00008B;
+}
+
+#hero_img{
+    margin-top:50px;
+    
+}
+
+#comments{
+    width:35%;
+    height:500px;;
+    background-color:orange;
+    float:right;
+    border:solid 2px #00008B;
+}
+
+.comment_box{
+    margin:40px auto;
+    padding:20px;
+    width:80%;
+    height:70px;
+    border-radius: 10px;
+    background-color:cornsilk;
+}
+
+
+#sect_two{
+     width:100%;
+    height:500px;
+    background-color:cornsilk;
+    box-sizing: border-box;
+}
+
+#scroll_down{
+    width:60%;
+    height:400px;
+    float:left;
+}
+
+#info_column{
+    width:40%;
+    height:400px;
+    float:right;
+}
