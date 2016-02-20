@@ -17,7 +17,7 @@
             body{
                 margin:0 auto;
                 padding:0;
-                width:90%;
+                width:100%;
                 border:double 10px gold;
                 
             }
@@ -25,7 +25,7 @@
             header{
                 width:100%;
                 height:300px;
-                display:block;
+                display:inline-block;
             }
             
             #left_header{
@@ -33,6 +33,9 @@
                 height:300px;
                 background-color: burlywood;
                 float:left;
+                background-image:url(http://i.imgur.com/FN4GyXu.png);
+                background-repeat: no-repeat;
+                background-position: center;
                 
             }
             
@@ -41,61 +44,142 @@
              #mid_header{
                 width:60%;
                 height:300px;
-                background-image: url(#);
                 float:left;
+                 background-image: url('http://i.imgur.com/uBsd4Ib.jpg');
+                  background-repeat: no-repeat;
+                background-size:contain;
+                 background-position:center;
+                 display:block;
                 
             }
             
              #right_header{
-            
                 width:20%;
                 height:300px;
                 background-color: burlywood;
+                background-image:url('http://i.imgur.com/7UtGXiR.jpg?1');
+                background-repeat: no-repeat;
+                background-position: center;
                 float:right;
-                
             }
             
-            header > #left_header > span > img{
-                    
-                margin:50px 0 0 15%;
-            }
+
             
-            header > #right_header > span > img{
-                margin:20px 0 0 15%;
-            }
-            
-            #sect_one{
+            main{
                 margin: 0 auto;
                 padding:0;
-                width:60%;
-                height:500px;
-                background-image: url('http://i.imgur.com/uBsd4Ib.jpg');
+                width:100%;
+                height:800px;
+                background-image: url('http://i.imgur.com/YY0IJfC.jpg');
+                background-repeat: no-repeat;
+                background:cover;
+                background-position: center;
             }
             
+            header > #mid_head > h1{
+            font-size:24px;
+            color:red;
+            text-align:center;
+}
+            
+            #push_down_nav{
+                width:100%;
+                height:200px;
+                float:left;
+                background-color:aqua;
+            }
+            
+            nav{
+    margin:0 auto;
+    padding:0;
+    width:80%;
+    box-sizing:border-box;
+    
+}
+
+button{
+    width:calc(100%/6);
+    height:50px;
+    border-radius:7px;
+    font-size:14px;
+    color:blue;
+    box-sizing:border-box;
+    float:left;
+}
+/*Align buttons*/
+
+
+#last_button{
+    float:right;
+}
+
+.disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 565px){
+button{
+        font-size:65%;
+    }
+}
+
+button:hover{
+    background-color: #00008B; 
+}
+
+
+a:active{
+    color:red;
+}
+
+a:hover{
+    color:snow;
+}
+
+
+a:link{
+    color: #00008B; 
+    text-align: center; 
+    text-decoration: none;
+    font-weight:600;
+} 
         
-        v
         </style>
     
     </head>
     
-   
+<!--   <img width=70% height=70% src='http://i.imgur.com/FN4GyXu.png'>-->
 
     <body>
         <header>
-            <div id='left_header'>
-                <span>
-                <img width=70% height=70% src='http://i.imgur.com/FN4GyXu.png'>
-                </span>
-            </div>
+            <div id='left_header'></div>
             
             <div id='mid_header'>
+                
+                <div id='push_down_nav'><h1>Fresno's Veterans Day Parade</h1></div>
+                
+                <nav>
+            
+                    <button><a href="index.html">Home</a></button>
+                
+                    <button class='disabled'><a href="#">Grand Marshall</a></button>
+                
+                    <button class='disabled'><a href="#">Press Releases</a></button>
+                
+                    <button><a href="parade_route.html">Parade Route</a></button>
+                
+                    <button class='disabled'><a href="#">Sponsors</a></button>
+                
+                    <button id='last_button'><a href="about.html">About Us</a></button>
+                
+            </nav>
+            
+            
+            
             </div>
             
-            <div id='right_header'>
-                <span>
-                    <img width=70% height=85% src='http://i.imgur.com/1XuBWjN.jpg'>
-                    </span>
-            </div>
+            <div id='right_header'></div>
         </header>
 
         
@@ -121,7 +205,6 @@
         
         
     </body>
-
 
 
 
