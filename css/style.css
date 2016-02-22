@@ -99,6 +99,13 @@ header > #mid_head > #mid_head_bottom > #mid_head_bottom_left > #info_box{
     border-radius:8px;
 }
 
+@media screen and (max-width: 696px){
+body > header > #mid_head > #mid_head_bottom > #mid_head_bottom_left > #info_box{
+        width:55px;
+        height:40px;
+    }
+}
+
 header > #mid_head > #mid_head_bottom > #mid_head_bottom_right > #donate{
     float:right;
     width:140px;
@@ -240,10 +247,10 @@ a:link{
 }
 
 #sect_one{
-    margin:0 auto;
+    margin:5% auto;
     padding:0;
     width:80%;
-    height:420px;
+    height:450px;
     
     color:#00194a;
     border-bottom: dashed 4px;
@@ -251,27 +258,24 @@ a:link{
 }
 
 #sect_one_left{
-    width:55%;
-    height:400px;
+    width:40%;
+    height:100%;
     float:left;
     box-sizing: border-box;
 }
 
-/*
-body > main > #sect_one > #sect_one_left > img{
-    margin:2.5% 0 0 10%;
-}
-*/
+
 
 
 
 
 #sect_one_right{
-    width:45%;
-    height:400px;
+    width:60%;
+    height:100%;
     border-left:solid 3px blue;
     float:right;
     box-sizing: border-box;
+    overflow:auto;
 }
 
 
