@@ -321,10 +321,7 @@ footer{
     width:100%;
     height:80px;
     background-color:#00194a;
-/*
-    position:relative;
-    bottom:10px;
-*/
+
 }
 #soc_med{
     width:30%;
@@ -342,32 +339,3 @@ footer{
     float:right;
 }
 
-.service_imgs_boxes{
-    padding-right:25px;
-    width:100px;
-    height:100px;
-    float:right;
-}
-
-
-@media screen and (max-width:725px){
-    footer{
-        width:100%;
-        height:50px;
-    }
-    @media screen and (max-width:720px){
-        
-    }
-    
-
-@media screen and (max-width:725px){
-    footer > #service_imgs > .service_imgs_boxes > 
-    
-    img{
-        display:inline-block;
-        width:50px;
-        height:50px;
-    }
-    
-    
-}
