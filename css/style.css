@@ -15,6 +15,9 @@ main, header{
     padding:0;
     width:100%;
 }
+main{
+    height:auto;
+}
 
 header{
     display:inline-block;
@@ -24,11 +27,6 @@ header{
     background-color:#00194a;    
 }
 
-body > main{
-    height:800px;
-    
-   
-}
 
 /*Header Containers*/
 #left_head{
@@ -36,24 +34,102 @@ body > main{
     height:100%;
  
     float:left;
-    border:solid 3px;
     box-sizing: border-box;
 }
 
 #mid_head{
+    display:inline-block;
     width:60%;
     height:100%;
     float:left;
-    border:double 10px;
+     background-image: url('http://i.imgur.com/xpkU99E.jpg');
+    background-repeat:no-repeat;
+    background-position:left;
+
     box-sizing: border-box;
 }
 
-header > #mid_head > h1{
+
+
+
+#mid_head_top{
+    display:inline;
+    width:100%;
+    height:25%;
+    float:left;
+}
+#mid_head_bottom{
+    display:block;
+    width:100%;
+    height:75%;
+}
+
+header > #mid_head > #mid_head_top > h1{
+    margin:10px auto;
+    padding:0;
+    width:60%;
     font-size:29px;
     font-family: monospace;
     background-color:snow;
     color:#00194a;
     text-align:center;
+}
+
+#mid_head_bottom_left{
+    width:75%;
+    height:100%;
+    float:left;
+}
+
+#mid_head_bottom_right{
+    width:25%;
+    height:100%;
+    float:right;
+}
+
+header > #mid_head > #mid_head_bottom > #mid_head_bottom_left > #info_box{
+    display:inline-block;
+    float:right;
+    width:35%;
+    height:auto;
+    background-color:lightgrey;
+    color:#00194a;
+    text-align:center;
+    border:dashed 5.5px #952525;
+    border-radius:8px;
+}
+
+header > #mid_head > #mid_head_bottom > #mid_head_bottom_right > #donate{
+    float:right;
+    width:140px;
+    height:40px;
+    line-height:40px;
+    font-size:24px;
+    font-weight: bolder;
+    background-color:gold;
+    color:#00194a;
+    text-align:center;
+    border-radius:8px;
+    position:relative;
+    top:110px;
+    left:20%;
+}
+
+header > #mid_head > #mid_head_bottom > #mid_head_bottom_left > #info_box > span{
+    font-size:22px;
+    font-family: monospace;
+    
+    color:#00194a;
+    text-align:center;
+    float:right:
+}
+header > #mid_head > #mid_head_bottom > #mid_head_bottom_left > #info_box > p{
+    font-size:18px;
+    font-weight:bold;
+    font-family: monospace;
+    color:#952525;
+    text-align:center;
+    float:left;
 }
 
 body > main > header > #left_head > img{
@@ -84,7 +160,6 @@ body > main > header > #right_head > img{
     height:100%;
    
     float:right;
-    border:solid 3px;
     box-sizing: border-box;
 }
 
@@ -101,9 +176,10 @@ body > main > header > #right_head > img{
 }
 
 nav{
+    margin-top:10px;
     margin:0 auto;
-    padding:0;
-    width:80%;
+    padding:5px;
+    width:60%;
     height:50px;
     box-sizing:border-box;
    
@@ -126,7 +202,7 @@ button{
     float:right;
 }
 
-@media screen and (max-width: 565px){
+@media screen and (max-width: 620px){
 button{
         font-size:65%;
     }
@@ -157,36 +233,35 @@ a:link{
     margin:0 auto;
     padding:0;
     width:80%;
-    height:300px;
-    background-color:snow;
+    height:150px;
+    
     color:#00194a;
     
 }
 
 #sect_one{
-    margin:10px auto;
+    margin:0 auto;
     padding:0;
     width:80%;
-    height:300px;
-    background-image: url('http://i.imgur.com/xpkU99E.jpg');
-    background-repeat:no-repeat;
-    background-position:left;
+    height:420px;
     
-    border:solid 10px #00194a;
+    color:#00194a;
+    border-bottom: dashed 4px;
+    
 }
 
 #sect_one_left{
     width:55%;
     height:400px;
-    background-color:beige;
-    border:solid 3px blue;
     float:left;
     box-sizing: border-box;
 }
 
+/*
 body > main > #sect_one > #sect_one_left > img{
     margin:2.5% 0 0 10%;
 }
+*/
 
 
 
@@ -194,48 +269,24 @@ body > main > #sect_one > #sect_one_left > img{
 #sect_one_right{
     width:45%;
     height:400px;
-    background-color:darkblue;
-    border:solid 3px blue;
+    border-left:solid 3px blue;
     float:right;
     box-sizing: border-box;
 }
 
 
-#sect_one_right_top{
-    margin:5% 0 0 2.5%;
-    width:95%;
-    height:60px;
-    text-align:center;
-    background-color:beige;
-    border:solid 3px gold;
-    border-radius:10px;
-    
-    box-sizing: border-box;
-}
-
-#sect_one_right_mid{
-   margin:5% 0 0 2.5%;
-    width:95%;
-    height:60px;
-    text-align:center;
-    background-color:beige;
-    border:solid 3px gold;
-    border-radius:10px;
-    
-    box-sizing: border-box;
-}
 
 #sect_one_right_bttm{
-    margin:2.5% 0 0 2.5%;
+    margin:10% 0 0 2.5%;
     width:95%;
-    height:200px;
+    height:auto;
     text-align:left;
     font-size:16px;
     color:blue;
     font-weight: 700;
     
-    background-color:beige;
-    border:solid 3px gold;
+   
+    border:solid 3px red;
     border-radius:10px;
     
     box-sizing: border-box;
@@ -249,11 +300,39 @@ span{
     color:blue;
 }
 
+#page_bottom{
+    margin:10px auto;
+    padding:0;
+    width:80%;
+    height:200px;
+     background-image: url('http://i.imgur.com/ZULRfgK.jpg');
+    background-repeat:no-repeat;
+    background-position:right;
+   
+    
+    border:solid 10px #00194a;
+}
+
+#bottom_nav{
+    margin:0 2.5% 0 0;
+    padding:0;
+    width=40%;
+    height:auto;
+    font-size:22px;
+    float:left;
+    text-align:left;
+    color:#b34038;
+}
+
+
+
+
+
 /*Separate Footer into 3 sections*/
 
 footer{
     width:100%;
-    height:100px;
+    height:80px;
     background-color:#00194a;
 /*
     position:relative;
@@ -263,7 +342,7 @@ footer{
 #soc_med{
     width:30%;
     height:100%;
-    background-color:snow;
+    
     float:left;
     border:solid 2px;
     box-sizing:border-box;
